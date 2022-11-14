@@ -1,0 +1,54 @@
+.pageMenu{
+    background-color : #0f1113;
+    height: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    h1{
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .pageMenu__box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        grid-gap: 33px;
+    .cardBurger2{
+        position: relative;
+        height: 350px;
+       
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        &__text{
+            position: absolute;
+            top : 5px;
+            left: 0;
+            width: 100%;
+          
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            font-size: 17px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            border-radius: 30px;
+            margin-bottom: 10px;
+        }
+
+    }
+}
+       
+}

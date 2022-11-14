@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'title';
+  src: url("./title.otf");
+}
+@font-face {
+  font-family: '2';
+  src: url("./title2.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #cbd5e0;
+}
+
+#__next {
+  position: relative;
+  background-color: #0f1113;
+}
+
+@media screen and (max-width: 1000px) {
+  .pageMenu__box{
+    margin-bottom: 33px;
+  }
+  .pageMenu__box{
+    grid-template-columns: 1fr !important;
+  }
+  .menu {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  .cardBurger {
+   height: 50vh;
+  }
+}
+  .title h1 {
+    font-size: 3rem !important;
+  }
+
+  a {
+    font-size: 1rem !important;
+  }
+  .boxVideo{
+    height: 100vh !important;
+    
+  }
+  .menu {
+    margin-bottom: 30vh !important; ;
+    .cardBurger{
+      &__text{
+        p{
+          font-size: 1rem !important;
+          text-shadow:  2px 2px 1px #000;
+        }
+        h3 {
+          text-shadow:  2px 2px 1px #000; 
+        }
+      }
+      
+    }
+  }
+  .info{
+    margin : 0 auto 0 auto !important;
+    &__text{
+      h2 {
+        font-size: 2.5rem !important;
+        margin-top : 33px !important;
+      }
+      p{
+        font-size: 1.5rem !important;
+      }
+     
+    
+    }
+  }
+  
+
+
+
+@media screen and (max-width: 600px) {
+  header{
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 20px;
+    
+  }
+  .navBar{
+    padding: 0 !important;
+
+  }
+  .title h1 {
+    font-size: 2.5rem !important;
+  }
+
+  a {
+    font-size: 0.8rem !important;
+  }
+  .boxVideo{
+   height: 100vh !important;
+   h1 {
+    font-size: 3rem !important;
+    top: 35% !important;
+  }
+   h2{
+      font-size: 1.5rem !important;
+      top: 55% !important;
+   }
+  }
+  .menu {
+    margin-bottom: 60vh !important;
+  }
+  .info{
+    margin : 0 auto 20vh auto !important;
+    &__text{
+      h2 {
+        font-size: 2.5rem !important;
+        margin-top : 33px !important;
+      }
+      p{
+        font-size: 1.5rem !important;
+      }
+     
+    
+    }
+  }
+}
+@media screen and (max-height: 700px) {
+  .info{
+    margin : 0 auto 30vh auto !important;
+  }
+}
+  
+
+
+.pageContact{
+  height: 70vh;
+  padding-top : 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+  &__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    h1{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.5rem;
+      font-family:  "2";
+    }
+  }
+}
+

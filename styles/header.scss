@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'title';
+    src: url("./title.otf");
+}
+@font-face {
+    font-family: '2';
+    src: url("./title2.ttf");
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+    position: fixed;
+    height: 100px;
+    background-color: black;
+    width: 100%;  
+    z-index: 999;
+    opacity: 0.9;
+    .title{
+    h1{
+        font-family: '2';
+        font-size: 50px;
+        color: white;
+        padding-left: 50px;
+      
+    } 
+}
+.navBar{
+    padding-right: 50px;
+    ul{
+        display: flex;
+        li{
+            list-style: none;
+            padding-left: 30px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 20px;
+                font-family: 'title';
+                cursor: pointer;
+                &:hover{
+                    color: rgb(255, 255, 255);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+
+ 
+}
+}
+
