@@ -4,12 +4,12 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 export default function Layout({ children, data}, ) {
-  console.log(data);
+  
   return (
     <>
 
      
-    <Header data={data}/>
+    <Header />
       <main> {children}</main>
       <Footer/>
       <div id="root"></div>
