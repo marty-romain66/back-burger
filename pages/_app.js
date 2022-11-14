@@ -7,51 +7,19 @@ import "../styles/footer.scss";
 import "../styles/info.scss";
 import "../styles/pageMenu.scss";
 
-
-function MyApp({ Component, pageProps, } , ) {
-
+export default function MyApp({ Component, pageProps }) {
   return (
-    <Layout data={pageProps.data}>
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
     </Layout>
-  )
+  );
 }
-// export async function getServerSideProps({
-//   params,
-//   req,
-//   res,
-//   query,
-//   preview,
-//   previewData,
-//   resolvedUrl,
-//   locale,
-//   locales,
-//   defaultLocale,
-// }) {
-//   console.log("Logging : " + res);
-//   const data = await axios
-//     .get("http://localhost:3001/api/user/config/", {
-//       headers: {
-//         token: process.env.API_KEY,
-//       },
-//     })
-//     .then((res) => {
-//       return res.data;
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
 
-
-
+    // <Layout data={pageProps.data}>
+    // <Component {...pageProps} />
+    // </Layout>
 
  
 
 
-export default MyApp
+
